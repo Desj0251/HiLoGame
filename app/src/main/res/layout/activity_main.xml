@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    android:weightSum="10">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:src="@drawable/title"
+        android:layout_gravity="center"
+        android:layout_weight="2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="194dp"
+        android:layout_height="177dp"
+        android:layout_gravity="center"
+        android:layout_weight="5"
+        android:src="@drawable/rollsafe" />
+
+    <EditText
+        android:id="@+id/guessText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="2"
+        android:ems="10"
+        android:hint="@string/input_hint"
+        android:inputType="text"
+        android:textColor="@color/colorTextDark"
+        android:textSize="25sp" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:weightSum="5">
+
+        <Button
+            android:id="@+id/guessButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="guessTouched"
+            android:text="@string/button_guess"
+            android:textColor="@color/colorTextLight" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/button_reset"
+            android:onClick="resetTouched"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorTextLight" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

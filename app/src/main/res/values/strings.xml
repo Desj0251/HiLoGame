@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HiLo Game</string>
+    <string name="button_guess">Guess</string>
+    <string name="button_reset">Reset</string>
+    <string name="input_hint">Enter Guess</string>
+    <string name="action_about">About</string>
+    <!-- TODO: replace with your name + userID -->
+    <string name="author" translatable="false">John Desjardins (desj0251)</string>
+</resources>
